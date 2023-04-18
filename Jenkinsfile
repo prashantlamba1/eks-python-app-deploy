@@ -30,7 +30,7 @@ pipeline {
         stage("Pushing docker image to ECR") {
             steps {
                 script {
-                        sh "aws ecr get-login-password | docker login -u AWS --password-stdin "https://$(aws sts get-caller-identity --query 'Account' --output text).dkr.ecr.$(aws configure get region).amazonaws.com""
+                        sh "aws ecr get-login-password | docker login -u AWS --password-stdin https://$(aws sts get-caller-identity --query 'Account' --output text).dkr.ecr.$(aws configure get region).amazonaws.com"
                         sh "docker push python-hello:v1.0.0"
                 }
             }
