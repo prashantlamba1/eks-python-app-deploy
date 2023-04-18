@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: python-hello
+  namespace: python-hello
+spec:
+  selector:
+    app: python-hello
+  type: NodePort
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 5000
