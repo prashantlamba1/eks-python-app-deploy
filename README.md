@@ -11,7 +11,7 @@ This repository execution is in continuation of the jenkins server creation task
 3. Push the image to existing ECR repository
 4. Deploy the app on EKS using kubernetes deployment 
 
-For running the script we must setup AWS credentials -> AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY. Following link can be referred.
+For running the script we must setup AWS credentials in Jenkins. -> AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY. Following link can be referred https://www.jenkins.io/doc/book/using/using-credentials/.
 We have to create a jenkins pipeline now as below:
 
 1. Goto Jenkins then click new item and select pipeline after giving a name. 
