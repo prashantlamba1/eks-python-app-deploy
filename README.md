@@ -21,3 +21,8 @@ We have to create a jenkins pipeline now as below:
 2. Once you have saved the pipeline click on build now.
 
 The pipeline will create VPC, EKS cluster and then would deploy 2 replicas of python-hello app.
+
+
+# Architecture
+
+![image](https://user-images.githubusercontent.com/67849881/232942712-d1f8434a-325b-4ff1-bba5-6332dbb629bb.png)
